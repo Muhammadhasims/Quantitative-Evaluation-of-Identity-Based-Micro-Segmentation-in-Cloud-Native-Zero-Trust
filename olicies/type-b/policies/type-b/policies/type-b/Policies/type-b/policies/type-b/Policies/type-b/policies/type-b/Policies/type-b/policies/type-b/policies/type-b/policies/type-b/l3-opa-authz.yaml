@@ -1,0 +1,14 @@
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: productpage-opa
+  namespace: bi-front
+spec:
+  selector:
+    matchLabels:
+      app: productpage
+  action: CUSTOM
+  provider:
+    name: opa-ext-authz-grpc
+  rules:
+    - {}
