@@ -1,0 +1,5 @@
+level,type_a_path,type_b_path,type_a_radius_percent,type_b_radius_percent,notes
+L0,7,7,100,100,all seven probes succeed; Redis returns +PONG
+L1,1,1,14.3,14.3,only frontend remains; six backend/data probes fail
+L2,1,0,14.3,0,Type A frontend still reachable; Type B STRICT rejects unmeshed caller
+L3,0,0,0,0,Type A attacker gets HTTP 403; Type B attacker gets 000
