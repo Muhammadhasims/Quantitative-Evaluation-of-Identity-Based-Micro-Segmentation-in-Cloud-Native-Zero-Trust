@@ -1,0 +1,5 @@
+stack,request,samples,p50_ms,p95_ms,notes
+L0 baseline,GET /,50,14.4 average,46.0,successful shop pages before mesh comparison
+Type A L3,GET /,50,16.2,81.4,authorised HTTP 200 only
+Type B L3,GET /,50,18.3,68.0,authorised HTTP 200 only
+Bookinfo,,0,,,not used; repeated samples were unstable
