@@ -1,0 +1,5 @@
+level,path,radius_percent,attacker_productpage,authorised,notes
+L0,4/4,100,200,,flat network; N=4 not N=7
+L1,1/4,25,200,,front only; details reviews ratings blocked
+L2,0/4,0,000,,Istio STRICT; unmeshed attacker
+L3,0/4,0,000,200/403,"allow GET /productpage; deny GET /api/v1/products; attacker curl exit 56"
