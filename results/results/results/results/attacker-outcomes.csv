@@ -1,0 +1,12 @@
+probe,type_a,type_b
+L0 frontend shop page,HTTP 200,HTTP 200
+L0 Redis PING,+PONG,+PONG
+L0 backend ports,open,open
+L1 frontend,reachable,HTTP 200
+L1 Redis and backends,blocked,blocked
+L2 frontend,still reachable,000 STRICT
+L2 Redis and backends,blocked,blocked
+L3 frontend,HTTP 403,000
+L3 Redis,blocked,blocked
+L3 authorised GET /,HTTP 200,HTTP 200
+L3 authorised GET /cart,HTTP 403,HTTP 403
