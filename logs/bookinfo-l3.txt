@@ -1,0 +1,13 @@
+Date: 2026-10-08
+Cluster: minikube profile typeb (restarted; node Ready, Kubernetes v1.37.0)
+OPA: opa-695795d4b8-xwbdr 1/1 Running
+productpage: productpage-v1-5784d8b4f6-zswxx 2/2 Running
+l3-client: recreated in bi-front, 2/2 Running (meshed)
+attacker: recreated in default, 1/1 Running, sidecar.istio.io/inject=false
+
+allow:200    GET /productpage
+deny:403     GET /api/v1/products
+attacker:000 curl exit 56
+
+000 with curl exit 56 is a TCP reset before any HTTP status.
+The attacker probe fails. It is not a successful connection.
