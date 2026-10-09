@@ -101,3 +101,6 @@ L3 authorised pair, 8 October 2026:
 
 - Online Boutique: https://github.com/GoogleCloudPlatform/microservices-demo
 - Bookinfo: https://istio.io/latest/docs/examples/bookinfo/
+
+  ## Developed application for demonstration
+  https://hasimquantitativeevaluationofidentitybasedmicrosegmentation.grok.me
